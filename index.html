@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo"><h4>Sangram Shinde</h4></div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Sangram Shinde</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Skills</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/profile-pic.png" alt="Sangram Shinde profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Sangram Shinde</h1>
+        <p class="section__text__p2">Computer Engineer</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/resume-example.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/sangram-shinde-b30a3b268/'"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/Sangram-G-ShindeSangram-G-Shinde'"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="vi">
+          <video class="video-element" controls>
+            <source src="video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="Skills icon"
+                class="icon"
+              />
+              <h3>Training</h3>
+              <p>Junior Full Stack Java Developer<br />By Generation India</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>B.E. Bachelor of Engineering<br />Computer Engineering<br />CGPA 8.98</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              In the dynamic realm of software development, I find boundless inspiration in transforming abstract concepts into functional solutions. 
+              Each line of code is a brushstroke, contributing to the masterpiece of innovation. The thrill of conquering bugs and implementing features 
+              propels my commitment to excellence. Beyond syntax, my motivation is fueled by the positive impact technology can wield, bridging gaps and 
+              sparking meaningful change. In this ever-evolving tech sphere, challenges are opportunities to innovate, learn, and leave an indelible imprint 
+              on the digital landscape. My journey is steered by a passion for progress, a commitment to continual growth, and the unwavering belief that 
+              every line of code has the potential to shape a better tomorrow. Let's code with purpose, innovate with conviction, and collectively build 
+              a future where technology is not just a tool but a force for positive transformation.
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='#experience'"
+      />
+    </section>
+    <section id="experience">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Skills</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Certification From Codecademy</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Skills icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Java</h3>
+                  <p>Skilled</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Skills icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Spring Boot</h3>
+                  <p>Skilled</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Skills icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>HTML</h3>
+                  <p>Skilled</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Skills icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>CSS</h3>
+                  <p>Skilled</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Skills icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>JavaScript</h3>
+                  <p>Skilled</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Skills icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>TypeScript</h3>
+                  <p>Skilled</p>
+                </div>
+              </article>
+            </article>
+            <article>
+              <img
+                src="./assets/checkmark.png"
+                alt="Skills icon"
+                class="icon"
+              />
+              <div>
+                <h3>BootStrap</h3>
+                <p>Skilled</p>
+              </div>
+            </article>
+          </article>
+          <article>
+            <img
+              src="./assets/checkmark.png"
+              alt="Skills icon"
+              class="icon"
+            />
+            <div>
+              <h3>MySQL</h3>
+              <p>Skilled</p>
+            </div>
+          </article>
+        </article>
+      <article>
+        <img
+          src="./assets/checkmark.png"
+          alt="Skills icon"
+          class="icon"
+        />
+        <div>
+          <h3>Git</h3>
+          <p>Beginner</p>
+        </div>
+      </article>
+    </article>
+    <article>
+      <img
+        src="./assets/checkmark.png"
+        alt="Skills icon"
+        class="icon"
+      />
+      <div>
+        <h3>Bash</h3>
+        <p>Beginner</p>
+      </div>
+    </article>
+  </article>
+  <article>
+    <img
+      src="./assets/checkmark.png"
+      alt="Skills icon"
+      class="icon"
+    />
+    <div>
+      <h3>Prompt Engineering</h3>
+      <p>Skilled</p>
+    </div>
+  </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Self-Honed</h2>
+            <div class="article-container">
+            </article>
+            <article>
+              <img
+                src="./assets/checkmark.png"
+                alt="Skills icon"
+                class="icon"
+              />
+              <div>
+                <h3>Data Structures</h3>
+                <p>Skilled</p>
+              </div>
+            </article>
+          </article>
+          <article>
+            <img
+              src="./assets/checkmark.png"
+              alt="Skills icon"
+              class="icon"
+            />
+            <div>
+              <h3>Algorithms</h3>
+              <p>Intermediate</p>
+            </div>
+          </article>
+        </article>
+        <article>
+          <img
+            src="./assets/checkmark.png"
+            alt="Skills icon"
+            class="icon"
+          />
+          <div>
+            <h3>Object-Oriented Programming</h3>
+            <p>Skilled</p>
+          </div>
+        </article>
+      </article>
+      <article>
+        <img
+          src="./assets/checkmark.png"
+          alt="Skills icon"
+          class="icon"
+        />
+        <div>
+          <h3>Python</h3>
+          <p>Beginner</p>
+        </div>
+      </article>
+    </article>
+    <article>
+      <img
+        src="./assets/checkmark.png"
+        alt="Skills icon"
+        class="icon"
+      />
+      <div>
+        <h3>C++</h3>
+        <p>Beginner</p>
+      </div>
+    </article>
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='#projects'"
+      />
+    </section>
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-1.jpg"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Hotel Reservation System</h2>
+            <div class="btn-container">
+            <P class="left-to-right">
+              • Developed a robust hotel reservation site script with HTML, CSS, PHP, and MySQL<br>
+              • Prioritizing user-friendly features like room availability search and seamless inventory browsing.<br>
+              • Implemented a payment and SMS booking confirmations, elevating the site's functionality for effective and efficient hotel management.
+            </P>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-2.png"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Servify.io</h2>
+            <div class="btn-container">
+              <P class="left-to-right">
+                • Servify.io revolutionizes the service-finding experience, offering a dynamic and user-friendly web platform meticulously crafted to simplify
+                  the process of discovering dependable service providers for everyday tasks.<br>
+                • The website seamlessly connects users with sought-after services like plumbing, cleaning, and electrical work.<br>
+                • Users effortlessly engage with trusted professionals, and the platform meticulously ensures a seamless user experience while curating high quality matches between users and service providers.
+              </P>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-3.jpg"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Java Invoice Generator</h2>
+            <div class="btn-container">
+              <P class="left-to-right">
+                • I crafted a Java application utilizing Spring Boot for robust backend management.<br>
+                • Facilitating the generation of detailed customer bills and invoices.<br>
+                • This system seamlessly integrates Java, Spring Boot, and specific functionalities for efficient hotel bill and invoice generation.
+              </P>              
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        
+
+        class="icon arrow"
+        onclick="location.href='#contact'"
+      />
+    </section>
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:sangramshinde943@gmail.com">sangramshinde943@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com/in/sangram-shinde-b30a3b268/">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2023 Sangram Shinde. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
